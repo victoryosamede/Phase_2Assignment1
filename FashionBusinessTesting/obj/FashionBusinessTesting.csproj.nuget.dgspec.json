@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionBusiness\\FashionBusiness.csproj": {}
+    "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionBusinessTesting\\FashionBusinessTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionBusiness\\FashionBusiness.csproj": {
+    "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionBusinessTesting\\FashionBusinessTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionBusiness\\FashionBusiness.csproj",
-        "projectName": "FashionBusiness",
-        "projectPath": "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionBusiness\\FashionBusiness.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionBusinessTesting\\FashionBusinessTesting.csproj",
+        "projectName": "FashionBusinessTesting",
+        "projectPath": "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionBusinessTesting\\FashionBusinessTesting.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionBusiness\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionBusinessTesting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
