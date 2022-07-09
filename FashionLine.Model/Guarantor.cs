@@ -1,7 +1,6 @@
 ﻿namespace FashionLine.Model
 {
-    public class Class1
+    public class Guarantor
     {
-
     }
 }
