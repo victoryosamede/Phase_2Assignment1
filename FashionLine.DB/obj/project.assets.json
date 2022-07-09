@@ -50,6 +50,18 @@
           "lib/netstandard2.0/Azure.Identity.dll": {}
         }
       },
+      "FluentNHibernate/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NHibernate": "5.3.3"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/FluentNHibernate.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/FluentNHibernate.dll": {}
+        }
+      },
       "Iesi.Collections/4.0.4": {
         "type": "package",
         "dependencies": {
@@ -337,7 +349,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "NHibernate/5.3.12": {
+      "NHibernate/5.3.3": {
         "type": "package",
         "dependencies": {
           "Antlr3.Runtime": "[3.5.1, 4.0.0)",
@@ -1733,6 +1745,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "FashionLine.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FashionLine.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FashionLine.Model.dll": {}
+        }
       }
     }
   },
@@ -1788,6 +1810,27 @@
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml",
         "pkgicon.png"
+      ]
+    },
+    "FluentNHibernate/3.1.0": {
+      "sha512": "hPBdWol6CRPDoG6Qfmy14uR7zwrQB9ElitQhSIei829I1lMmVvoK9C0eFux8tMuCeNKi0NeDl0+4JFj+O32zQw==",
+      "type": "package",
+      "path": "fluentnhibernate/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentnhibernate.3.1.0.nupkg.sha512",
+        "fluentnhibernate.nuspec",
+        "lib/net461/FluentNHibernate.dll",
+        "lib/net461/FluentNHibernate.pdb",
+        "lib/net461/FluentNHibernate.xml",
+        "lib/netcoreapp2.0/FluentNHibernate.dll",
+        "lib/netcoreapp2.0/FluentNHibernate.pdb",
+        "lib/netcoreapp2.0/FluentNHibernate.xml",
+        "lib/netstandard2.0/FluentNHibernate.dll",
+        "lib/netstandard2.0/FluentNHibernate.pdb",
+        "lib/netstandard2.0/FluentNHibernate.xml",
+        "logo-nuget.png"
       ]
     },
     "Iesi.Collections/4.0.4": {
@@ -2284,10 +2327,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "NHibernate/5.3.12": {
-      "sha512": "bUjhiekqbVPl8E5EBCcVwXyOI0dtN5+b5mC9LKFpejrYcrEOzAOlfGycZgvidP2uj1RgXTmiXZvzchv1USm/9Q==",
+    "NHibernate/5.3.3": {
+      "sha512": "ar4yr/NgtkysCK46UsEPmraqlAsfDOgpda9tWDRhN0K/N/A2X3rDOFaVg3f+ab3L6oy/+C2hAcUM7sZIBFhq+g==",
       "type": "package",
-      "path": "nhibernate/5.3.12",
+      "path": "nhibernate/5.3.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2315,7 +2358,7 @@
         "lib/netstandard2.0/NHibernate.xml",
         "nhibernate-configuration.xsd",
         "nhibernate-mapping.xsd",
-        "nhibernate.5.3.12.nupkg.sha512",
+        "nhibernate.5.3.3.nupkg.sha512",
         "nhibernate.nuspec"
       ]
     },
@@ -6299,12 +6342,18 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "FashionLine.Model/1.0.0": {
+      "type": "project",
+      "path": "../FashionLine.Model/FashionLine.Model.csproj",
+      "msbuildProject": "../FashionLine.Model/FashionLine.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.Data.SqlClient >= 4.1.0",
-      "NHibernate >= 5.3.12"
+      "FashionLine.Model >= 1.0.0",
+      "FluentNHibernate >= 3.1.0",
+      "Microsoft.Data.SqlClient >= 4.1.0"
     ]
   },
   "packageFolders": {
@@ -6333,7 +6382,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionLine.Model\\FashionLine.Model.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\cypherJorney\\Phase II\\FashionLine\\FashionLine.Model\\FashionLine.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6346,13 +6399,13 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "FluentNHibernate": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[4.1.0, )"
-          },
-          "NHibernate": {
-            "target": "Package",
-            "version": "[5.3.12, )"
           }
         },
         "imports": [
